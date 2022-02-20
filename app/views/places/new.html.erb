@@ -1,10 +1,10 @@
 
-<h1 style="font-family:verdana;"> Enter a new city </h1>
+<h1 style="font-family:verdana;"> Enter a new place </h1>
 <br>
 
 <%= form_with model: @place do |form| %>
   <p>
-    <%= form.label "name", "City Name" %>
+    <%= form.label "name", "Place Name" %>
     <%= form.text_field "name" %>
   </p>
   <%= form.submit %>
