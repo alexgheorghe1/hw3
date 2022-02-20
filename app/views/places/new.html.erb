@@ -1,0 +1,14 @@
+
+<h1> Enter a new city </h1>
+
+<%= form_with model: @place do |form| %>
+  <p>
+    <%= form.label "name", "City Name" %>
+    <%= form.text_field "name" %>
+  </p>
+  <%= form.submit %>
+<% end %>
+
+<p>
+<a href="/places">Go back</a>
+</p>
