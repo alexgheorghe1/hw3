@@ -1,5 +1,6 @@
 
-<h1> Enter a new city </h1>
+<h1 style="font-family:verdana;"> Enter a new city </h1>
+<br>
 
 <%= form_with model: @place do |form| %>
   <p>
@@ -8,6 +9,8 @@
   </p>
   <%= form.submit %>
 <% end %>
+
+<br>
 
 <p>
 <a href="/places">Go back</a>

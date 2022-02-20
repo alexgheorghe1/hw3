@@ -18,5 +18,13 @@ class PlacesController < ApplicationController
         redirect_to "/places"
     end
 
+    
+# out of scope of hw -- just playing around with code
+
+    def destroy
+        @place = Place.find(params["id"])
+        @place.destroy
+        redirect_to "/places"
+    end
 
 end

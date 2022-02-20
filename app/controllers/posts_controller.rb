@@ -11,4 +11,16 @@ class PostsController < ApplicationController
         redirect_to "/places/#{@post.place_id}"
     end
 
+# out of scope of hw -- just playing around with code
+
+    def show
+        @post = Post.find(params["id"])
+    end
+
+    def destroy
+        @post = Post.find(params["id"])
+        post.destroy
+        redirect_to "/places"
+    end
+
 end

@@ -1,14 +1,14 @@
-<h1> <%= @place.name %> </h1>
-<p> </p>
+
+<h1 style="font-family:verdana;"> <%= @place.name %> </h1>
+<br>
 
 <ul>
 
 <% for post in @place.posts %>
     <p> <h2> <%= post.title %> </h2> </p>
-    <p> <%= post.posted_on %> </p>
+    <p style="font-family:courier;"> <small> <i> <%= post.posted_on %> </i> </small> </p>
     <p> <%= post.description %> </p>
-    <p> - </p>
-    <p> </p>
+    <br>
 <% end %>
 </ul>
 
@@ -18,5 +18,9 @@
 </p>
 
 <p>
-<a href="/places">Go back</a>
+<a href="/places">Back to places I've been</a>
+</p>
+
+<p>
+<%= button_to "Delete place", @place, method: :delete %>
 </p>
